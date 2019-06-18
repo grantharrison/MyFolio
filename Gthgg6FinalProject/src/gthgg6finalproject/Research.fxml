@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gthgg6finalproject.ResearchController">
+   <children>
+      <MenuBar>
+        <menus>
+            <Menu mnemonicParsing="false" onAction="#handleGoToA" text="Home">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Home" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#handleGoToC" text="Watchlist">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Watchlist" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Update">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER_LEFT" prefHeight="149.0" prefWidth="780.0" spacing="10.0">
+         <children>
+            <TextField fx:id="searchTextField" prefHeight="26.0" prefWidth="414.0" />
+            <Button mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </HBox>
+      <AnchorPane prefHeight="64.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="helpText" layoutX="95.0" prefHeight="27.0" prefWidth="691.0" />
+            <Button layoutX="21.0" mnemonicParsing="false" onAction="#handleHelp" prefHeight="27.0" prefWidth="61.0" text="Help" />
+         </children>
+      </AnchorPane>
+      <WebView fx:id="webView" prefHeight="607.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

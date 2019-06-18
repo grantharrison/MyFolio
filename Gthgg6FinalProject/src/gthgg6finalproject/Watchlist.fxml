@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gthgg6finalproject.WatchlistController">
+   <children>
+      <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Watchlist:" wrappingWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="stock1notesTextField" layoutX="361.0" layoutY="43.0" prefHeight="100.0" prefWidth="265.0" />
+      <MenuBar prefHeight="29.0" prefWidth="809.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#handleGoToA" text="Home">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Home" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" onAction="#handleGoToA" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" onAction="#handleGoToB" text="Research">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Research" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutX="25.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock 1:" wrappingWidth="57.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="stock1TextField" layoutX="80.0" layoutY="79.0" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+      <Text layoutX="256.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock 1 Notes:" wrappingWidth="99.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock 3:" wrappingWidth="57.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="stock3TextField" layoutX="80.0" layoutY="327.0" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+      <Text layoutX="256.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock 3 Notes:" wrappingWidth="99.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="stock3notesTextField" layoutX="361.0" layoutY="290.0" prefHeight="100.0" prefWidth="265.0" />
+      <Text layoutX="256.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock 3 Notes:" wrappingWidth="99.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="stock2notesTextField" layoutX="361.0" layoutY="168.0" prefHeight="100.0" prefWidth="265.0" />
+      <Text layoutX="25.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock 2:" wrappingWidth="57.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="stock2TextField" layoutX="80.0" layoutY="196.0" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

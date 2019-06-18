@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gthgg6finalproject.HomeController">
+   <children>
+      <ImageView fitHeight="421.0" fitWidth="718.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@wallstreet.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="29.0" prefWidth="718.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Home">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Home" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" onAction="#handleGoToC" text="Watchlist">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Watchlist" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" onAction="#handleGoToB" text="Research">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Research" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox alignment="CENTER" layoutY="53.0" prefHeight="347.0" prefWidth="640.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MyFolio" textAlignment="CENTER" wrappingWidth="289.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="80.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="186.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research and Watch your favorite stocks" textAlignment="CENTER" wrappingWidth="345.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="create" fill="WHITE" layoutX="213.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="312.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="278.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleGoToC" text="Watchlist" />
+            <Button mnemonicParsing="false" onAction="#handleGoToB" text="Research" />
+            <Text fx:id="welcome" fill="WHITE" layoutX="197.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="312.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
